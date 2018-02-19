@@ -25,6 +25,7 @@ public class DetailActivity extends AppCompatActivity {
         Intent intent = getIntent();
         if (intent == null) {
             closeOnError();
+
         }
 
         int position = intent.getIntExtra(EXTRA_POSITION, DEFAULT_POSITION);
