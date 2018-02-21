@@ -48,7 +48,6 @@ public class JsonUtils {
             sandwich.setDescription(sandwichJSONObject.getString("description"));
             sandwich.setImage(sandwichJSONObject.getString("image"));
             sandwich.setPlaceOfOrigin(sandwichJSONObject.getString("placeOfOrigin"));
-
             return sandwich;
         } catch (JSONException e) {
             e.printStackTrace();
