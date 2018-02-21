@@ -3,7 +3,6 @@ package com.udacity.sandwichclub;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -84,25 +83,25 @@ public class DetailActivity extends AppCompatActivity {
 
 
         if(sandwich.getAlsoKnownAs().size() > 0) {
-            alsoKnownTextView.setText(joinArrayOfStrings(", ",sandwich.getAlsoKnownAs()));
+            alsoKnownTextView.setText(joinStrings(", ",sandwich.getAlsoKnownAs()));
         } else {
             alsoKnownTextView.setText(R.string.no_names);
 
         }
 
         if(sandwich.getIngredients().size() > 0) {
-            ingredientsTextView.setText(joinArrayOfStrings(", ",sandwich.getIngredients()));
+            ingredientsTextView.setText(joinStrings(", ",sandwich.getIngredients()));
         }
 
     }
 
-    private String joinArrayOfStrings(String delimiter, List<String> listOfStrings) {
+    private String joinStrings(String devider, List<String> strings) {
         StringBuilder stringBuilder = new StringBuilder();
-        for(int i=0; i < listOfStrings.size(); i++) {
+        for(int i=0; i < strings.size(); i++) {
             if (i>0) {
-                stringBuilder.append(delimiter);
+                stringBuilder.append(devider);
             }
-            stringBuilder.append(listOfStrings.get(i));
+            stringBuilder.append(strings.get(i));
         }
         return stringBuilder.toString();
 
