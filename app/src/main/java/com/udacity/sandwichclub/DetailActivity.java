@@ -94,7 +94,6 @@ public class DetailActivity extends AppCompatActivity {
         }
 
     }
-
     private String joinStrings(String devider, List<String> strings) {
         StringBuilder stringBuilder = new StringBuilder();
         for(int i=0; i < strings.size(); i++) {
