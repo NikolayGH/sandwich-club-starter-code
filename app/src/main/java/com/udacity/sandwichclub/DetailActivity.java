@@ -91,7 +91,7 @@ public class DetailActivity extends AppCompatActivity {
         }
 
         if(sandwich.getIngredients().size() > 0) {
-            ingredientsTextView.setText(joinArrayOfStrings("; ",sandwich.getIngredients()));
+            ingredientsTextView.setText(joinArrayOfStrings(", ",sandwich.getIngredients()));
         }
 
     }
