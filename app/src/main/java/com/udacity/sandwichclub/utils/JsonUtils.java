@@ -34,7 +34,6 @@ public class JsonUtils {
             for (int j = 0; j < alsoKnownAsJSONArray.length(); j++) {
                 alsoKnownAs.add(alsoKnownAsJSONArray.getString(j));
             }
-
             //setting data to appropriate field in Sandwich object
             sandwich.setAlsoKnownAs(alsoKnownAs);
             // there is similar
